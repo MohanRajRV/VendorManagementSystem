@@ -1,0 +1,1 @@
+insert into cloud_vendor(id,address,name,phoneno)values(1,"gundur","mohan","xxxx");
