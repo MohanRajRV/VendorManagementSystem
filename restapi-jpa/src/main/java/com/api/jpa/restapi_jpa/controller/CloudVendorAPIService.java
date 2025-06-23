@@ -41,11 +41,10 @@ public class CloudVendorAPIService {
 
 
 		@GetMapping("/{vendorId}")
-		public String getVendorInfo(@PathVariable("vendorId") int id) {
+		public ResponseEntity<Object> getVendorInfo(@PathVariable("vendorId") int id) {
 			
-			//return CustomResposnse.responseFunc("REQUESTED VENDOR DETAIL",HttpStatus.OK,vedorservice.getCloudVendor(id));
-		  //ResponseEntity<Object>
-		  return "employee id nigga found"+id;
+		  return CustomResposnse.responseFunc("REQUESTED VENDOR DETAIL",HttpStatus.OK,vedorservice.getCloudVendor(id));
+		  
 		    
 		}
 		
